@@ -19,7 +19,9 @@ pipeline
             steps{
 
                 echo "checking the version"
-                VERSION_NO=VNo
+
+                sh "VERSION_NO=$VNo"
+                // VERSION_NO=VNo
 
                 
   
