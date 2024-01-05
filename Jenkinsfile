@@ -20,9 +20,10 @@ pipeline
 
                 echo "checking the version"
                 echo "entered version ${VNo}"
+                env.VERSION_NO = VNo
 
                 sh """
-                    $VERSION_NO = $VNo
+                    echo "Version number is: \$VERSION_NO"
                     
                 """
             }
