@@ -31,7 +31,7 @@ pipeline
                 
                 sh """ 
                 
-                    cd /var/jenkins_home/workspace/jenkins-scm-test
+                    cd /var/jenkins_home/workspace/version_control_job
                     mkdir -p tempDown
                     cd tempDown
 
@@ -48,7 +48,7 @@ pipeline
                     echo 'Deploying App to s3 bucket'
                     aws s3 sync build/ s3://firstbucketreactapp 
 
-                    cd /var/jenkins_home/workspace/jenkins-scm-test
+                    cd /var/jenkins_home/workspace/version_control_job
                     rm -r tempDown
                     
                 """    
