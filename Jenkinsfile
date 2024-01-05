@@ -19,7 +19,7 @@ pipeline
             steps{
 
                 echo "checking the version"
-                echo "entered version ${VNo}"
+                echo "entered version ${vno}"
                 script{
                     env.VERSION_NO = vno
 
