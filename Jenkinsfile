@@ -22,7 +22,7 @@ pipeline
                 echo "entered version ${VNo}"
 
                 sh """
-                    VERSION_NO = $VNo
+                    $VERSION_NO = $VNo
                     
                 """
             }
