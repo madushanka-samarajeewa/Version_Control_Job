@@ -5,7 +5,7 @@ pipeline
     environment{
         ACCESS_KEY=credentials('awsaccess')
         SECRET_ACC_KEY=credentials('awssecretaccess')
-        VERSION_NO='1.2'
+        VERSION_NO='1.3'
 
     }
 
@@ -21,7 +21,7 @@ pipeline
                 echo "checking the version"
                 echo "entered version ${vno}"
                 script{
-                    env.VERSION_NO = vno
+                    env.VERSION_NO=vno
 
                 }
                 
