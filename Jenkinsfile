@@ -11,7 +11,7 @@ pipeline
 
 
     parameters {
-        string defaultValue: '0.0', description: 'Enter the version number to roll back the deployment', name: 'VNo'
+        string defaultValue: '0.0', description: 'Enter the version number to roll back the deployment', name: 'vno'
     }
     
     stages{
@@ -20,7 +20,7 @@ pipeline
 
                 echo "checking the version"
                 echo "entered version ${VNo}"
-                env.VERSION_NO = VNo
+                env.VERSION_NO = vno
 
                 sh """
                     echo "Version number is: \$VERSION_NO"
