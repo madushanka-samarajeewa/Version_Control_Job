@@ -21,13 +21,13 @@ pipeline
                 echo "checking the version"
                 echo "entered version ${vno}"
                 script{
-                    env.VERSION_NO=vno
+                    env.VERSION_NO = vno
 
                 }
                 
 
                 sh """
-                    echo "Version number is: \$VERSION_NO"
+                    echo "Version number is: \$env.VERSION_NO"
                     
                 """
             }
@@ -56,8 +56,8 @@ pipeline
                     echo 'Deploying App to s3 bucket'
                     aws s3 sync build/ s3://firstbucketreactapp 
 
-                    cd /var/jenkins_home/workspace/version_control_job
-                    rm -r tempDown
+                    // cd /var/jenkins_home/workspace/version_control_job
+                    // rm -r tempDown
                     
                 """    
                 
