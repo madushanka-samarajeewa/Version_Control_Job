@@ -20,11 +20,10 @@ pipeline
 
                 echo "checking the version"
 
-                sh "VERSION_NO=$VNo"
-                // VERSION_NO=VNo
-
-                
-  
+                sh """
+                    VERSION_NO = $VNo
+                    
+                """
             }
         }
 
