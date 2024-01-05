@@ -18,9 +18,10 @@ pipeline
         stage('Download version'){
             steps{
 
+                echo 'checking the verison'
                 VERSION_NO=VersionNo
 
-                echo 'checking the verison'
+                
   
             }
         }
