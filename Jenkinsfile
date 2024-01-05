@@ -11,15 +11,15 @@ pipeline
 
 
     parameters {
-        string defaultValue: '0.0', description: 'Enter the version number to roll back the deployment', name: 'VersionNo'
+        string defaultValue: '0.0', description: 'Enter the version number to roll back the deployment', name: 'VNo'
     }
     
     stages{
-        stage('Download version'){
+        stage('Download_version'){
             steps{
 
-                echo 'checking the verison'
-                VERSION_NO=VersionNo
+                echo "checking the version"
+                VERSION_NO=VNo
 
                 
   
