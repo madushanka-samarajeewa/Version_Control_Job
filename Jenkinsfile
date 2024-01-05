@@ -56,14 +56,15 @@ pipeline
                     echo 'Deploying App to s3 bucket'
                     aws s3 sync build/ s3://firstbucketreactapp 
 
-                    // cd /var/jenkins_home/workspace/version_control_job
-                    // rm -r tempDown
-                    
+                   
                 """    
                 
             }
             
         }
+         // cd /var/jenkins_home/workspace/version_control_job
+                    // rm -r tempDown
+                    
         
         
     }
