@@ -55,6 +55,7 @@ pipeline
 
 
                     echo 'Deploying App to s3 bucket'
+                    ls
                     aws s3 sync build/ s3://firstbucketreactapp 
 
                    
